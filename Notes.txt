@@ -1,1 +1,29 @@
-try
+
+Oracles - connect Blockchain and outer wotld: bring data to BC
+
+Decentralized protocol = Smart contract = Decentralized Application (Dapp)
+
+Mnemonic - phrase used as a password (for all accounts in a wallet)
+
+Private key - password, unique for each account
+
+Testnets - medium for testing smart contracts (free)
+
+Faucet - application, giving free test tokens
+
+Gas - unit of computational measure (you have to pay "gas fee"). Gas price(measure of demand => speed)
+and gas limit can be set.
+
+Hash - unique fixed length string, identifying a piece of data 
+
+Nonce - "number used once" to find a problem solution
+
+Node - single instance (peer) of Decentralized system
+
+
+
+
+
+
+
+evoke raccoon grief beauty green silk decide type daughter oblige spy another
