@@ -20,6 +20,7 @@ Nonce - "number used once" to find a problem solution
 
 Node - single instance (peer) of Decentralized system
 
+Proof of Work(PoW): miners - Proof of Stake(PoS): validators 
 
 
 
