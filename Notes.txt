@@ -22,6 +22,8 @@ Node - single instance (peer) of Decentralized system
 
 Proof of Work(PoW): miners - Proof of Stake(PoS): validators 
 
+Account nonce counts how many transactions we make
+
 
 
 
