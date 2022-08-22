@@ -39,9 +39,9 @@ bytecode= compiled["contracts"]["Storage.sol"]["Storage"]["evm"][
 #get abi
 abi=compiled["contracts"]["Storage.sol"]["Storage"]["abi"]
 
-w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:7986"))
-chain_id=1337
-myadress="0x443345069D0a30C9c6FC35eD5FE7426FfF3BB07F"
+w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/cc8cc7e34bb440b19e75b2910913a25e"))
+chain_id=4
+myadress="0x6f9e2777D267FAe69b0C5A24a402D14DA1fBcaA1"
 prkey= os.getenv("PRIV_KEY")
 nonce = w3.eth.getTransactionCount(myadress)
 
@@ -52,13 +52,17 @@ trans= Storage.constructor().buildTransaction({"chainId":chain_id,"from":myadres
 #print(trans)
 
 signed=w3.eth.account.sign_transaction(trans,private_key=prkey)
+print("deploying contract...")
 Thash = w3.eth.send_raw_transaction(signed.rawTransaction)
 Treceipt =w3.eth.wait_for_transaction_receipt(Thash)
+print("Deployed.")
 
 #Work with the contract
 
 Contract = w3.eth.contract(address=Treceipt.contractAddress, abi=abi)
 print(Contract.functions.retrieve().call())
+
+print("updating contract...")
 storetransaction = Contract.functions.str(15).build_transaction({"chainId":chain_id,"gasPrice": w3.eth.gas_price,
 "from":myadress,"nonce":nonce+1})
 print(Contract.functions.retrieve().call())
@@ -66,5 +70,6 @@ print(Contract.functions.retrieve().call())
 signed_contract= w3.eth.account.sign_transaction(storetransaction, private_key =prkey )
 Tr_send= w3.eth.send_raw_transaction(signed_contract.rawTransaction)
 Tr_receipt= w3.eth.wait_for_transaction_receipt(Tr_send)
+print("Updated!")
 print(Contract.functions.retrieve().call())
 

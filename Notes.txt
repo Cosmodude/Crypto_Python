@@ -24,9 +24,9 @@ Proof of Work(PoW): miners - Proof of Stake(PoS): validators
 
 Account nonce counts how many transactions we make
 
+Call - simulate making the call and getting return value
+Transact - make a state change
 
 
 
 
-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
-evoke raccoon grief beauty green silk decide type daughter oblige spy another
