@@ -27,6 +27,8 @@ Account nonce counts how many transactions we make
 Call - simulate making the call and getting return value
 Transact - make a state change
 
+Flattaning - removing imports with the actual code
+
 
 
 
