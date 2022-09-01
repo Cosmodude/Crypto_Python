@@ -20,11 +20,22 @@ contract FundMe {
     address public owner;
 
     AggregatorV3Interface public priceFeed;
+
     // the first person to deploy the contract is
     // the owner
     constructor(address _priceFeed) public {
         priceFeed = AggregatorV3Interface(_priceFeed);
         owner = msg.sender;
+    }
+
+    function getEntranceFee() public view returns (uint256) {
+        // minimumUSD
+        uint256 minimumUSD = 50 * 10**18;
+        uint256 price = getPrice();
+        uint256 precision = 1 * 10**18;
+        // return (minimumUSD * precision) / price;
+        // We fixed a rounding error found in the video by adding one!
+        return ((minimumUSD * precision) / price) + 1;
     }
 
     function fund() public payable {
