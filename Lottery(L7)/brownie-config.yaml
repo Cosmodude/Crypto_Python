@@ -7,13 +7,15 @@ compiler:
       - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0'
 
+dotenv: .env
+
 networks:
   default: development
   mainnet-fork:
     eth_usd_price_feed: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
     verify: False
   rinkeby:
-    vrf_coordinator: '0x6168499c0cFfCaCD319c818142124B7A15E857ab'
+    vrf_coordinator: '0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B'
     eth_usd_price_feed: '0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'
     verify: True
     link_token: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709'
@@ -29,5 +31,5 @@ networks:
   ganache-local:
     verify: False
   
-  wallets: 
-    from_key: ${PRIV_KEY}
+wallets:
+  from_key: ${PRIVATE_KEY}

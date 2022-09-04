@@ -29,6 +29,10 @@ Transact - make a state change
 
 Flattaning - removing imports with the actual code
 
+Unit tests - test small pieces of code in an isolated system (development env) (want to test the whole code)
+Intefgration tests - across multiple complex systems (Testnet)
+
+
 
 
 
