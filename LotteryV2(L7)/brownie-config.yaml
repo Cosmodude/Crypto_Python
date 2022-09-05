@@ -1,0 +1,34 @@
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.4.2
+  - smartcontractkit/chainlink-mix@3.0.0
+  - OpenZeppelin/openzeppelin-contracts@4.7.3
+compiler:
+  solc:
+    remappings:
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.4.2"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.7.3"
+      - "@chainlink-mix=smartcontractkit/chainlink-mix@3.0.0"
+
+dotenv: .env
+
+networks:
+  default: "development"
+  development:
+    key_hash: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15"
+    key_hash-v2: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15"
+    fee: "1000000000000000000"
+  goerli:
+    eth-usd-priceFeed: "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e"
+    vrf-coordinator: "0x2bce784e69d2Ff36c71edcB9F88358dB0DfB55b4"
+    vrf-coordinator-v2: "0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D"
+    key_hash-v2: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15"
+    link-token: "0x326C977E6efc84E512bB9C30f76E30c160eD06FB"
+    key_hash: "0x0476f9a745b61ea5c0ab224d3a6e4c99f0b02fce4da01143a4f70aa80ae76e8a"
+    fee: "100000000000000000"
+    verify: True
+  rinkeby:
+    eth-usd-priceFeed: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
+    verify: True
+  mainnet-fork-dev:
+    eth-usd-priceFeed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+    verify: False

@@ -1,3 +1,9 @@
 {
-    "solidity.defaultCompiler": "remote"
+    "solidity.defaultCompiler": "remote",
+    "solidity.compileUsingRemoteVersion": "latest",
+    
+    "solidity.remappings": [
+      "@chainlink/=/Users/Vlad/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2",
+      "@openzeppelin/=/Users/Vlad/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.3.2"
+    ]
 }
