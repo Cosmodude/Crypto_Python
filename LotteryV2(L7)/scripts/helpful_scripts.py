@@ -35,7 +35,7 @@ def get_acc(id=None, index=None):
         or network.show_active() in MAINNET_FORK
     ):
         return accounts[0]
-    return accounts.add(os.getenv("priv_key"))  # My MetaMask Account
+    return accounts.add(config["wallets"]["from_key"])  # My MetaMask Account
 
 
 def get_contract(contract_name):

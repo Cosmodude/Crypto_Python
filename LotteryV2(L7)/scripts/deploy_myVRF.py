@@ -36,7 +36,7 @@ def cancel_subscription():
 def fund_subscription():
     acc = get_acc()
     contract = MyVRF[-1]
-    link_amount = 10000000000000000000  # 3 LINK
+    link_amount = 1000000000000000000  # 3 LINK
     link_in_decimals = link_amount / (10**18)
     tx = fund_with_link(contract.address, amount=link_amount)
     tx.wait(1)

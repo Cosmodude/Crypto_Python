@@ -32,3 +32,6 @@ networks:
   mainnet-fork-dev:
     eth-usd-priceFeed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
     verify: False
+
+wallets:
+  from_key: ${PRIVATE_KEY}

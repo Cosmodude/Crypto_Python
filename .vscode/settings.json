@@ -1,6 +1,6 @@
 {
     "solidity.defaultCompiler": "remote",
-    "solidity.compileUsingRemoteVersion": "latest",
+    "solidity.compileUsingRemoteVersion": "v0.6.6+commit.6c089d02",
     
     "solidity.remappings": [
       "@chainlink/=/Users/Vlad/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2",

@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./MyVRFv2.sol";
+import "./MyVRF.sol";
 
 contract LotteryV2 is Ownable {
     mapping(address => string) public address_to_name;

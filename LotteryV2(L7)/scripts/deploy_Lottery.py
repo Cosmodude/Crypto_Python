@@ -5,6 +5,7 @@ import time
 
 
 def deploy():
+    #acc=get_acc(id="TestVlad");
     acc = get_acc()
     contract = LotteryV2.deploy(
         get_contract("eth-usd-priceFeed").address,
