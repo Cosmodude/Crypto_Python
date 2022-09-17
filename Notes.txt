@@ -1,5 +1,5 @@
 
-Oracles - connect Blockchain and outer wotld: bring data to BC
+Oracles - connect Blockchain and outer world: bring data to BC
 
 Decentralized protocol = Smart contract = Decentralized Application (Dapp)
 
