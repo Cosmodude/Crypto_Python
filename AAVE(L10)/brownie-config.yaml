@@ -73,6 +73,7 @@ networks:
     weth_token: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
     lending_pool_addresses_provider: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5"
     eth_usd_price_feed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+    dai_eth_price_feed: "0x773616e4d11a78f511299002da57a0a94577f1f4"
   matic-fork:
     eth_usd_price_feed: "0xF9680D99D6C9589e2a93a78A04A279e509205945"
 wallets:
