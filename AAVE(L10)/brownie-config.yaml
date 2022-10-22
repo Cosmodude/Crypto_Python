@@ -18,6 +18,8 @@ networks:
   goerli: 
     weth_token: '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6'
     lending_pool_addresses_provider: "0x5E52dEc931FFb32f609681B8438A51c675cc232d"
+    dai_eth_price_feed: "0x0d79df66BE487753B02D015Fb622DED7f0E9798d"
+    dai_token: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
     eth_usd_price_feed: '0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e'
     vrf_coordinator: '0x2bce784e69d2Ff36c71edcB9F88358dB0DfB55b4'
     vrf_coordinator-v2: '0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D'
@@ -26,6 +28,7 @@ networks:
     keyhash: '0x0476f9a745b61ea5c0ab224d3a6e4c99f0b02fce4da01143a4f70aa80ae76e8a'
     fee: 100000000000000000
     verify: True
+
   kovan:
     vrf_coordinator: "0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9"
     link_token: "0xa36085F69e2889c224210F603D836748e7dC0088"
@@ -74,6 +77,7 @@ networks:
     lending_pool_addresses_provider: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5"
     eth_usd_price_feed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
     dai_eth_price_feed: "0x773616e4d11a78f511299002da57a0a94577f1f4"
+    dai_token: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
   matic-fork:
     eth_usd_price_feed: "0xF9680D99D6C9589e2a93a78A04A279e509205945"
 wallets:
