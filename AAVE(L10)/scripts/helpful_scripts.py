@@ -20,6 +20,16 @@ LOCAL_BLOCKCHAIN_ENVIRONMENTS = NON_FORKED_LOCAL_BLOCKCHAIN_ENVIRONMENTS + [
 # Etherscan usually takes a few blocks to register the contract has been deployed
 BLOCK_CONFIRMATIONS_FOR_VERIFICATION = 6
 
+def get_account(index=None, id=None):
+    if index:
+        return accounts[index]
+    if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
+        return accounts[0]
+    if id:
+        return accounts.load(id)
+    return accounts.add(config["wallets"]["from_key"])
+
+
 
 
 
