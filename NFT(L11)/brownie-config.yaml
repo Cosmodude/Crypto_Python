@@ -6,3 +6,6 @@ compiler:
     remappings:
       - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.2.2"
       - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0"
+      
+wallets:
+  from_key: ${PRIVATE_KEY}
