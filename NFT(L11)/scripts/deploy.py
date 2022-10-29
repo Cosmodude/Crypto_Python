@@ -2,7 +2,7 @@ from this import s
 from scripts.helpful_scripts import get_account
 from brownie import SimpleCollectible
 
-sample_token_URI="https://ipfs.io/ipfs/QmQ1TCshR9w22GLwcEkN7VELL5gWwoCMGqVt8iEAhRKW6J?filename=Shawn.JPG"
+sample_token_URI="https://ipfs.io/ipfs/QmVC5A5F7e6BK4TqF9rmkrp8LFsbN11JWeD9xDhxx1KcmU?filename=jsonvalidator.json"
 OpenSea_URL="https://testnets.opensea.io/assets/goerli/{}/{}"
 
 def main():
